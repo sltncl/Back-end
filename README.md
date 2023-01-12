@@ -1,19 +1,18 @@
 # Back-end
  
-La repository Back-end è così composta:
+The Back-end repository is composed as follows:
 
-- Directory Dataset, contiene il dataset non processato (IMDB_Dataset.csv) e quello processato (New2DataSet.csv);
-- Directory Stopwords, insieme delle stopwords utilizzate per processare il dataset;
-- main.py, contiene le istruzioni per poter printare le prestazioni di tutti i modelli analizzati nel nostro progetto;
-- Pmodel.py, contiene le istruzioni per poter visualizzare le prestazione del modello salvato dal file MLmodelCountvLogisticRegression.py;
-- MLmodel.py, contiene una classe con metodi per training, tuning del modello di Machine Learning;
-- Processing.py, contiene una classe con metodi che servono per effettuare il pre-processing;
-- MLmodelCountvLogisticRegression.py, contiene le istruzioni per poter allenare un modello di machine learning, visualizzare le prestazioni e salvare il modello allenato in un file model.joblib.
+- Dataset directory, contains the unprocessed dataset (IMDB_Dataset.csv) and the processed one (New2DataSet.csv);
+- Stopwords directory, set of stopwords used to process the dataset;
+- main.py, contains the instructions to be able to print the performance of all the models analyzed in our project;
+- Pmodel.py, contains the instructions to view the performance of the model saved by the file MLmodelCountvLogisticRegression.py;
+- MLmodel.py, contains a class with methods for training, tuning the Machine Learning model;
+- Processing.py, contains a class with methods that are used to carry out the pre-processing;
+- MLmodelCountvLogisticRegression.py, contains the instructions to be able to train a machine learning model, view the performance and save the trained model in a model.joblib file.
 
-Il modello con prestazioni più elevate si ottiene utilizzando il CountVectorizer come vettorizzatore e LogisticRegression come modello.
-Il file da eseguire per poter visualizzare solo le prestazioni del modello più preciso è il file MLmodelCountvLogisticRegression.py, una volta eseguito verrà creato all'interno della repository un file model.joblib.
-Dopo la creazione del file model.joblib potrà essere eseguito il file Pmodel.py.
-
+The best performing model is achieved by using the CountVectorizer as the vectorizer and LogisticRegression as the model. 
+The file to execute in order to view only the performance of the most precise model is the MLmodelCountvLogisticRegression.py file, once executed a model.joblib file will be created within the repository. 
+After the model.joblib file is created, the Pmodel.py file can be executed.
 
 
 
