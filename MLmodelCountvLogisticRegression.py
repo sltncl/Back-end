@@ -26,7 +26,7 @@ y = df['sentiment']
 print('\nCOUNT VECTORIZER')
 print('\nLogistic Regression')
 # Defines the variable countVectlr as an object Vectorizer
-model = MLmodel(CountVectorizer, LogisticRegression(max_iter=500,),X,y)
+model = MLmodel.MLmodel(CountVectorizer, LogisticRegression(max_iter=500,),X,y)
 model.trainingModel()
 model.PrintSummaryOfTraining()
 # we store the trained model, the preprocessor and the vectorizer in 3 different memory location files

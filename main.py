@@ -27,17 +27,17 @@ y = df['sentiment']
 print('COUNT VECTORIZER')
 print('\nLogistic Regression')
 # Defines the variable countVectlr as an object MLmodel
-countVectlr = MLmodel(CountVectorizer, LogisticRegression(max_iter=500,),X,y)
+countVectlr = MLmodel.MLmodel(CountVectorizer, LogisticRegression(max_iter=500,),X,y)
 countVectlr.trainingModel()
 countVectlr.PrintSummaryOfTraining()
 print('\nSupport Vector Machine')
 # Defines the variable countVectSvm as an object MLmodel
-countVectSvm = MLmodel(CountVectorizer, svm.SVC(),X,y)
+countVectSvm = MLmodel.MLmodel(CountVectorizer, svm.SVC(),X,y)
 countVectSvm.trainingModel()
 countVectSvm.PrintSummaryOfTraining()
 print('\nKNearestNeighbor')
 # Defines the variable countVectNkk as an object MLmodel
-countVectKnn = MLmodel(CountVectorizer, KNeighborsClassifier(),X,y)
+countVectKnn = MLmodel.MLmodel(CountVectorizer, KNeighborsClassifier(),X,y)
 countVectKnn.trainingModel()
 countVectKnn.PrintSummaryOfTraining()
 
@@ -52,16 +52,16 @@ countVectKnn.PrintSummaryOfTraining()
 print('TFIDF VECTORIZER')
 print('\nLogistic Regression')
 # Defines the variable TfidfVectlr as an object MLmodel
-TfidfVectlr = MLmodel(TfidfVectorizer, LogisticRegression(),X,y)
+TfidfVectlr = MLmodel.MLmodel(TfidfVectorizer, LogisticRegression(),X,y)
 TfidfVectlr.trainingModel()
 TfidfVectlr.PrintSummaryOfTraining()
 print('\nSupport Vector Machine')
 # Defines the variable TfidfVectSvm as an object MLmodel
-TfidfVectSvm = MLmodel(TfidfVectorizer, svm.SVC(),X,y)
+TfidfVectSvm = MLmodel.MLmodel(TfidfVectorizer, svm.SVC(),X,y)
 TfidfVectSvm.trainingModel()
 TfidfVectSvm.PrintSummaryOfTraining()
 print('\nKNearestNeighbor')
 # Defines the variable TfidfVectKnn as an object MLmodel
-TfidfVectKnn = MLmodel(TfidfVectorizer, KNeighborsClassifier(),X,y)
+TfidfVectKnn = MLmodel.MLmodel(TfidfVectorizer, KNeighborsClassifier(),X,y)
 TfidfVectKnn.trainingModel()
 TfidfVectKnn.PrintSummaryOfTraining()
