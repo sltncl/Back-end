@@ -2,6 +2,8 @@
  
 The Back-end repository is composed as follows:
 
+- Preprocessing directory, contain the dataset and stopwords directories and the Processing.py file
+- TrainingTestML directory, contains the MLmodel.py file
 - Dataset directory, contains the unprocessed dataset (IMDB_Dataset.csv) and the processed one (New2DataSet.csv);
 - Stopwords directory, set of stopwords used to process the dataset;
 - main.py, contains the instructions to be able to print the performance of all the models analyzed in our project;
