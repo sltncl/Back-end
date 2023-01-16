@@ -1,4 +1,4 @@
-from MLmodel import MLmodel
+from TrainingTestML import MLmodel
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 
 # Import the new dataset from New2DataSet.csv
-df = pd.read_csv('Dataset/New2DataSet.csv')
+df = pd.read_csv('PreProcessing/Dataset/New2DataSet.csv')
 # Set the features and label
 # A feature is an input variable
 # A label is the thing we're predicting
