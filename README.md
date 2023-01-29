@@ -1,6 +1,6 @@
 # Back-end
  
-The Back-end repository is composed as follows:
+The Back-end-Sentimental-Analysis repository is composed as follows:
 
 - Preprocessing directory, contain the dataset and stopwords directories and the Processing.py file;
 - TrainingTestML directory, contains the MLmodel.py file;
